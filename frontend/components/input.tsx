@@ -29,7 +29,7 @@ const input = () => {
   return (
     <div className={styles.box} >
         <input className={styles.InputBox} type='text' /*value={userInput} onChange={handleInputChange}*/ placeholder='ここにタイピングしてくれ' />
-        
+          
     </div>
   )
 }
