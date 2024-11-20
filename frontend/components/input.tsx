@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
 
 const styles = {
@@ -23,15 +23,19 @@ const styles = {
     `
 }
 
+interface InputProps{
+    input: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
 
 
-const input = () => {
+const Input: React.FC<InputProps> = (props) => {
   return (
     <div className={styles.box} >
-        <input className={styles.InputBox} type='text' /*value={userInput} onChange={handleInputChange}*/ placeholder='ここにタイピングしてくれ' />
+        <input className={styles.InputBox} type='text' value={props.input} onChange={props.onChange} placeholder='ここにタイピングしてくれ' />
         
     </div>
   )
 }
 
-export default input
+export default Input
