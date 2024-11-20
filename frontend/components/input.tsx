@@ -4,8 +4,10 @@ import React, { useState, useEffect } from 'react';
 
 
 const styles = {
-    box:`
-
+    container:`
+        flex
+        items-center
+        justify-center
     `,
     InputBox:`
         text-black
@@ -31,7 +33,7 @@ interface InputProps{
 
 const Input: React.FC<InputProps> = (props) => {
   return (
-    <div className={styles.box} >
+    <div className={styles.container} >
         <input className={styles.InputBox} type='text' value={props.input} onChange={props.onChange} placeholder='ここにタイピングしてくれ' />
         
     </div>
