@@ -6,6 +6,6 @@ interface WordDisplayProps {
 
 const WordDisplay: React.FC<WordDisplayProps> = ({ word }) => {
   return <h2>Word: {word}</h2>;
-};
+};    
 
 export default WordDisplay;
