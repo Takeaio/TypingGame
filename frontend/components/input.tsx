@@ -22,6 +22,7 @@ const styles = {
         relative
         border border-gray-500
         text-center
+        mt-[10%]
     `
 }
 

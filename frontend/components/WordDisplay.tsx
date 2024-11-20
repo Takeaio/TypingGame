@@ -12,7 +12,7 @@ const styles={
     word:`
         text-center
         text-8xl
-        
+        mt-[5%]
     `
 }
 
@@ -24,7 +24,7 @@ interface WordDisplayProps {
 const WordDisplay: React.FC<WordDisplayProps> = ({ word }) => {
     return (
         <div className={styles.container}>
-            <div className="flexflex-row">
+            <div className="flex-row">
                 <h2 className={styles.title}>
                     次の文字をタイピングするのだ！！
                 </h2>

@@ -9,7 +9,7 @@ import ResetButton from "../components/ResetButton";
 
 const styles = {
 
-  
+
 }
 
 
@@ -101,11 +101,11 @@ const TypingGame: React.FC = () => {
   return (
     <div>
       <h1>Typing Game</h1>
-      <Timer time={time} />
-      <ScoreBoard score={score} missCount={missCount} />
       <WordDisplay word={word} />
       <InputField input={input} onChange={handleInputChange} />
       <ResetButton onClick={reset} />
+      <ScoreBoard score={score} missCount={missCount} />
+      <Timer time={time} />
     </div>
   );
 };
