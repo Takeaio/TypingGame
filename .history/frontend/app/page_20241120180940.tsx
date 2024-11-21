@@ -5,7 +5,6 @@ import ScoreBoard from "../components/ScoreBoard";
 import WordDisplay from "../components/WordDisplay";
 import InputField from "../components/Input";
 import ResetButton from "../components/ResetButton";
-import Header from "@/components/Header";
 
 
 const styles = {
@@ -101,7 +100,7 @@ const TypingGame: React.FC = () => {
 
   return (
     <div>
-      <Header text1="Typing Game"/>
+      <h1>Typing Game</h1>
       <WordDisplay word={word} />
       <InputField input={input} onChange={handleInputChange} />
       <ResetButton onClick={reset} />
